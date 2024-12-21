@@ -20,4 +20,5 @@ class SampleappApplicationTests(@Autowired private val restTemplate: TestRestTem
         val content = """["item1","item2"]"""
         assertEquals(content, restTemplate.getForObject<String>("/items"))
     }
+
 }
